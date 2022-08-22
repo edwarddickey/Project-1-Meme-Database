@@ -10,5 +10,5 @@ p{
 }
 body {
     background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg');
-
+    background-attachment: fixed;
 }
