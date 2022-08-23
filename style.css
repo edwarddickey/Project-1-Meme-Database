@@ -21,3 +21,16 @@ body {
 #toggle-bar {
     margin-top: 15px;
 }
+h5{
+    width:400px;
+    position: absolute; 
+}
+img {
+    float: left;
+    width:  500px;
+    object-fit: cover;
+    margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 150px;
+  margin-left: 275px;
+}
