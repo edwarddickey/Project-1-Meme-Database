@@ -1,6 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("The DOM has loaded");
+  });
+
 let memeFeed = document.getElementById("meme-list")
-let navItem = document.createElement('h5')
-let i = 0
+
+
 fetch("https://api.imgflip.com/get_memes")
 .then(response => response.json())
 .then(memeInfo =>{
@@ -14,10 +18,19 @@ fetch("https://api.imgflip.com/get_memes")
 function populatePage(memeInfo){
     for (let i = 0; i < memeInfo.data.memes.length; i++) {
         console.log(memeInfo.data.memes[i]);
+        let navItem = document.createElement('h5')
         let img = document.createElement('img')
+        let btn = document.createElement("button");
+        btn.innerHTML = "Favorite";
+      // document.querySelector('#likeBtn').innerText='Favorite';
+
         img.src = memeInfo.data.memes[i].url
         navItem.appendChild(img)
-        memeFeed.append(navItem)
+        memeFeed.appendChild(navItem)
+        navItem.appendChild(btn)
 
     }
+}
+function favBtn(){
+    
 }

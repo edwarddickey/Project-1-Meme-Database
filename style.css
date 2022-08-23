@@ -23,7 +23,6 @@ body {
 }
 h5{
     width:400px;
-    position: absolute; 
 }
 img {
     float: left;
@@ -33,4 +32,7 @@ img {
   margin-bottom: 25px;
   margin-right: 150px;
   margin-left: 275px;
+}
+button {
+    margin-left: 275px
 }
