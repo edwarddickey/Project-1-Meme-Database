@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 let memeFeed = document.getElementById("meme-list")
+let favorites = []
 
 
 fetch("https://api.imgflip.com/get_memes")
@@ -17,12 +18,16 @@ fetch("https://api.imgflip.com/get_memes")
     
 function populatePage(memeInfo){
     for (let i = 0; i < memeInfo.data.memes.length; i++) {
-        console.log(memeInfo.data.memes[i]);
+        //console.log(memeInfo.data.memes[i]);
         let navItem = document.createElement('h5')
         let img = document.createElement('img')
         let btn = document.createElement("button");
         btn.innerHTML = "Favorite";
-      // document.querySelector('#likeBtn').innerText='Favorite';
+        btn.addEventListener('click',(e)=>{
+            
+            favorites.push(memeInfo.data.memes[i])
+        })
+     
 
         img.src = memeInfo.data.memes[i].url
         navItem.appendChild(img)
@@ -34,3 +39,4 @@ function populatePage(memeInfo){
 function favBtn(){
     
 }
+console.log(favorites)

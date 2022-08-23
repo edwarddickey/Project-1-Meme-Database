@@ -34,5 +34,6 @@ img {
   margin-left: 275px;
 }
 button {
-    margin-left: 275px
+    margin-left: 275px;
+    background : yellow;
 }
