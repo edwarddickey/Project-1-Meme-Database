@@ -11,10 +11,17 @@
     --font-color: yellow;
     --background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/12/Subtle-Grey-Pattern-for-Photoshop.jpg');
 }
+#mode-label{
+    font-family: sans-serif;
+    color: grey;
+    margin-left: 0px;
+    background-color: none;
+}
 h1{
     margin: auto;
     width: 400px;
-    background: yellow;
+    background: var(--primary-color);
+    color: var(--font-color);
  }
 p{
     margin: auto;
