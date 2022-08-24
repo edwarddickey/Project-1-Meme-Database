@@ -45,8 +45,9 @@ function favBtnAct(){
         let btn = document.createElement("button");
         btn.innerHTML = "Favorite";
         btn.addEventListener('click',(e)=>{
-            btn.innerText = "Unfavorite"
-            favorites.push(memeInfo.data.memes[i])
+            toggle(btn);
+            //btn.innerText = "Unfavorite"
+            //favorites.push(memeInfo.data.memes[i])
         })
      
 
