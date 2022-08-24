@@ -33,12 +33,12 @@ body {
     background-image: var(--background-image);
     background-attachment: fixed;
 }
-#fav-btn {
+/* #fav-btn {
     background: yellow;
 }
 #all-btn {
     background: yellow;
-}
+} */
 #toggle-bar {
     margin-top: 15px;
 }
@@ -56,5 +56,6 @@ img {
 }
 button {
     margin-left: 275px;
-    background : yellow;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
