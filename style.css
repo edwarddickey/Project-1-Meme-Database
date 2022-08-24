@@ -1,3 +1,16 @@
+:root {
+    --primary-color: yellow;
+    --secondary-color: black;
+    --font-color: black;
+    --background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg');
+}
+
+[data-theme="light"] {
+    --primary-color: black;
+    --secondary-color: yellow;
+    --font-color: yellow;
+    --background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/12/Subtle-Grey-Pattern-for-Photoshop.jpg');
+}
 h1{
     margin: auto;
     width: 400px;
