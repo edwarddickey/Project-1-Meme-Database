@@ -1,7 +1,23 @@
+:root {
+    --primary-color: yellow;
+    --secondary-color: black;
+    --font-color: black;
+    --background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg');
+}
+
+[data-theme="light"] {
+    --primary-color: black;
+    --secondary-color: yellow;
+    --font-color: yellow;
+    --background-image: url('https://images.freecreatives.com/wp-content/uploads/2015/12/Subtle-Grey-Pattern-for-Photoshop.jpg');
+}
+
 h1{
     margin: auto;
     width: 400px;
-    background: yellow;
+    /* background: yellow; */
+    background: var(--primary-color);
+    color: var(--font-color);
  }
 p{
     margin: auto;
@@ -9,15 +25,39 @@ p{
     background: red
 }
 body {
-    background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg');
+    /* background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg'); */
+    /* background-image: url('https://t3.ftcdn.net/jpg/02/64/27/90/360_F_264279006_WDXxV3OHjAOoHqH7iiLDrg23p0947g7U.jpg'); */
+    background-image: var(--background-image);
     background-attachment: fixed;
 }
-#fav-btn {
-    background: yellow;
-}
-#all-btn {
-    background: yellow;
+button {
+    /* background: yellow; */
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 #toggle-bar {
     margin-top: 15px;
+} 
+#theme-button {
+    /* background: yellow; */
+    background: var(--primary-color);
+}
+h5{
+    width:400px;
+    position: absolute; 
+}
+img {
+    float: left;
+    width:  500px;
+    object-fit: cover;
+    margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#mode-label {
+    font-family: sans-serif;
+    color: gray;
+    margin-left: 0px;
+    background-color: none;
 }
