@@ -6,6 +6,9 @@ let memeFeed = document.getElementById("meme-list")
 let favorites = []
 let favBtn = document.getElementById("fav-btn")
 let allBtn = document.getElementById("all-btn")
+let toggleButton = document.getElementById("mode-btn")
+let toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+let toggleText = document.querySelector("mode-label")
 
 
 
