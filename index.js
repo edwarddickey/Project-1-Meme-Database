@@ -28,7 +28,8 @@ function populatePage(memeInfo){
         let btn = document.createElement("button");
         btn.innerHTML = "Favorite";
         btn.addEventListener('click',(e)=>{
-            btn.innerText = "Unfavorite"
+            btn.innerText = "Favorited"
+            window.alert("Meme added to favorites");
             favorites.push(memeInfo.data.memes[i])
         })
      
