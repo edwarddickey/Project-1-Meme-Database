@@ -29,7 +29,7 @@ function populatePage(memeInfo){
         btn.innerHTML = "Favorite";
         btn.addEventListener('click',(e)=>{
             btn.innerText = "Favorited"
-            window.alert("Meme added to favorites");
+            alert("Meme added to favorites");
             favorites.push(memeInfo.data.memes[i])
         })
      
